@@ -1,7 +1,26 @@
 # Co2fly
 
-# Hardware
-## Sensor
+## Features and usage
+
+### Main screen
+
+TODO
+
+### Graph mode
+
+TODO
+
+### Calibration
+
+TODO
+
+### Credits
+
+TODO
+
+
+## Hardware
+### Sensor
 Sensirion SCD40/41 will both work
 For ease of assembly, I suggest using the adafruit PCBs that provide I2C STEMMA QT connectors
 https://www.adafruit.com/product/5187
@@ -24,7 +43,7 @@ They should provide very similar accuracy, the photoacoustic is newer and slight
 They both measure "true" Co2 concentration, instead of trying to guess Co2 concentration by indirect means like cheaper sensors.
 They should both be perfectly adequate for COVID usecases, as long as they are properly calibrated by the user.
 
-## Main board
+### Main board
 I chose to use the RP2040 adafruit feather for the following reasons:
 
 - cheap
@@ -40,7 +59,7 @@ https://www.adafruit.com/product/4884
 
 WATCH OUT: current I2C implementation uses main I2C pins as "Wire1" instead of "Wire". Anything using the Stemma/QT port or the main SDA/SCD pins needs to be initiated with "Wire1" in the code, not the default and commonly used "Wire" in all libraries/examples. This cost me a few nights to figure out.
 
-## Display
+### Display
 I chose the monochromatic Adafruid 128x64 OLED I2C display
 https://www.adafruit.com/product/4650
 
@@ -51,7 +70,7 @@ Adafruit does not sell assembled versions of this display, so this requires sold
 
 WATCH OUT: this display uses SH1107 controller instead of SSD1306! I wasted two nights of code on this confusion.
 
-## Battery
+### Battery
 
 Used a Li-Po 400mah battery with a perfect form-factor for Adafruit Featers
 https://www.adafruit.com/product/3898
@@ -62,12 +81,12 @@ Maybe this can be optimized but I doubt it.
 Being unable to measure battery voltage from the board makes it impossible to go to any kind of "power saving mode" when battery is low
 Usecase for the device also requires the screen to be always-on and legible, so it can be put on a table and checked at a glance.
 
-## Cables
+### Cables
 
 1x Stemma/QT I2C cable, connecting the rp2040 feather to the SCD40 
 https://www.adafruit.com/product/4399
 
-## Cost
+### Cost
 
 Total cost is around $80 per unit, plus shipping and importation taxes (for Europe for example)
 
@@ -75,7 +94,7 @@ Shipping to europe was about 30€ with UPS
 
 Not sure how cost effective this is compared to alternatives, the total price is dominated by the sensor, followed by display and main board. I don't think we can go much lower without sacrificing important things.
 
-## Repairability
+### Repairability
 
 A critical goal of this project was to remain easy to disassemble and allow the replacement of *any* single part and comporent in case of failure, upgrade, etc.
 
@@ -86,18 +105,18 @@ E-waste is a serious issue and covid is not an excuse for bad design :)
 
 I hightly encourage you to keep repairability and ease of assembly as main focus of any units you might want to assemble on your own.
 
-## Assembly
+### Assembly
 
 COMING SOON
 
-# Software
+## Software
 
-## Libraries
+### Libraries
 
 ### Sensor
 https://github.com/Sensirion/arduino-i2c-scd4x
 
-### Display
+#### Display
 
 Arduino basic GFX lib:
 https://github.com/adafruit/Adafruit-GFX-Library
@@ -106,23 +125,6 @@ Adafruit SH110X OLED library:
 https://github.com/adafruit/Adafruit_SH110x
 
 
-# Features and usage
-
-## Main screen
-
-TODO
-
-## Graph mode
-
-TODO
-
-## Calibration
-
-TODO
-
-## Credits
-
-TODO
 
 ## Design philosophy
 
