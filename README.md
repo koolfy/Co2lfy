@@ -9,7 +9,7 @@ It uses what I understand to be very precise and dependable electroacoustic dire
 
 I hope it might be useful for people who want to stop guessing "when it's time to vent the air" and start *KNOWING* when the risk is increased.
 
-Only what is measured can be managed.
+**Only what is measured can be managed.**
 
 ## Features and usage
 
@@ -105,7 +105,8 @@ Body is held together by both the male/female headers coupling the OLED display 
 
 ![Side](images/body_side.jpeg?raw=true "Side")
 
-Battery is very neatly enclosed and protected by the headers 
+Battery is very neatly enclosed and protected by the headers.
+
 It can still be unplugged via the JST cable
 
 ![Side2](images/body_side2.jpeg?raw=true "Side2")
