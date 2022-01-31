@@ -1,10 +1,54 @@
 # Co2fly
 
+## What is this?
+This is a Co2 concentration sensor for ambient air.
+
+Its goal is to provide indirect assesment of the estimated risk of covid transmissibility in closed space where many people are breathing shared air.
+
+It uses what I understand to be very precise and dependable electroacoustic direct CO2 sensors (Sensirion SCD40)
+
+I hope it might be useful for people who want to stop guessing "when it's time to vent the air" and start *KNOWING* when the risk is increased.
+
+Only what is measured can be managed.
+
 ## Features and usage
 
 ### Main screen
 
-TODO
+The main screen is the most useful high-level view of the current situation.
+It displays:
+- current Co2 ppm concentration in the air, refreshed every 10s
+- difference with the previously measured Co2 concentration ("is it going up/down? by how much?)
+- A righly legible box showing actually useful/actionable instructions, depending on the risk level.
+
+Values used are:
+
+Below 470ppm: Open Air
+
+![Open air display](images/open-air.jpeg?raw=true "Open air")
+
+Below 600ppm: Acceptable Air (good for situations where masks are not practical, like eating in a restaurant
+
+![Acceptable air display](images/acceptable-air.jpeg?raw=true "Acceptable air")
+
+Below 800ppm: Wear Mask (air should be safe as long as a FILTERING mask is being used. Of course many other factors are to be considered by the user)
+
+![Wear mask display](images/wear-mask.jpeg?raw=true "Wear mask")
+
+Below 1000ppm: High Risk (air is probably unsafe even with a mask on, instruct user to initiate ventilation NOW before things get even worse. This should indicate improper/insufficient air renewal)
+
+![High Risk display](images/righ-risk.jpeg?raw=true "High Risk")
+
+Over 1000ppm: COVID KILLBOX (air cannot possibly be made safe, instruct user to OPEN *AND* LEAVE for at least 5 minutes.)
+
+![Covid Killbox display](images/covid-killbox.jpeg?raw=true "Covid Killbox")
+![Covid Killbox2 display](images/covid-killbox2.jpeg?raw=true "Covid Killbox2")
+
+This last emergency level blinks to attract user attention at a glance.
+
+![Covid Killbox animation](images/covid-killbox.gif?raw=true "Covid Killbox animation")
+
+(a buzzing sound device was decided against for user convenience reasons, it would be too annoying in most situations and providing the possibility to enable/disable it would make the UX a lot more confusing)
 
 ### Graph mode
 
