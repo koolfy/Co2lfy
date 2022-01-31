@@ -52,16 +52,48 @@ This last emergency level blinks to attract user attention at a glance.
 
 ### Graph mode
 
-TODO
+From the main screen, pressing "A" gets into graph mode
+
+![graph mode](images/graph-mode.jpeg?raw=true "Graph mode")
+
+This will plot up to the last 55min of 30s-interval measurements
+
+max Y plotted is 1400ppm (you should not even be around air over 1200ppm in the first place, unless actually breathing over the sensor)
+mix Y plotted is 400ppm (earth's atmosphere has a concentration of around 410-430ppm as a minimum. Only artificial air can get lower than 400.)
+
+The plot will automatically shift once 55min of measurements are drawn
+
+Pressing "A" again toggles back the main screen.
 
 ### Calibration
 
-TODO
+Pressing "B" enters the calibration screen.
+
+![Calibration1](images/calibration-1.jpeg?raw=true "Calibration 1")
+The UX expects users to press the button out of curiosity, so the first screen should be informative only and require confirmation to do anything.
+It is also wise to inform the user that this should be done more or less weekly (to be on the safe side)
+
+Pressing "A" to initiate calibration shows the actual calibration screen
+
+![Calibration2](images/calibration-2.jpeg?raw=true "Calibration 2")
+This is a simple timer of 10min, updated in real time, so that the user understands it is vital to put the device in open air. It should only take 5mins for the sensor to start measuring baseline atmospheric CO2 concentrations but I'm accounting for the time the user will take to actually reach open air :)
+
+Nothing actually happens until the counter reaches zero, at which point a forced calibration is sent to the sensor, fixing it to the arbitrary baseline of 430ppm which should be very close to the CO2 concentration measured in open atmospheric air on planet earth ;)
+
+Once calibration was performed, inform the user (who very likely walked away and wants explicit feedback) and display by how much the calibration had to shift
+
+![Calibration3](images/calibration-3.jpeg?raw=true "Calibration 3")
+
+Showing the calibration delta allows the user to, from experience, know how often calibration is necessary, if the calibration was likely botched or not, and generally a good indication that everything went well.
+
+As this device might be used by people is risk assesment for situations where actual health and/or life/death decisions might take place, it is very important to indicate possible mis-calibrations or obviously erroneous data is being measured.
 
 ### Credits
 
-TODO
+From the main screen, pressing "C" displays a simple "credits" (or "about") section showing somewhat useful infos
+We don't know how the device will end up on someone's hands so providing references to find further documentation or who to complain about is always useful :)
 
+TODO-IMAGE
 
 ## Hardware
 ### Sensor
