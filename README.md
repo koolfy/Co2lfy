@@ -95,6 +95,13 @@ We don't know how the device will end up on someone's hands so providing referen
 
 ![Credits](images/credits.jpeg?raw=true "Credits")
 
+## Future versions
+
+I am planning on adding code to export measurements as a CSV file onto a micro-SD card.
+Timestamp will be kept consistent by a RTC with a small flat battery
+
+I already have the hardware and PCB at home. I just need some sleep before I tackle that last part ;)
+
 ## Hardware
 ### Body
 Body is held together by both the male/female headers coupling the OLED display PCB with the feather rp2040 PCB, as well as M2 spacers and screws
