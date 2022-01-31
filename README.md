@@ -96,6 +96,19 @@ We don't know how the device will end up on someone's hands so providing referen
 ![Credits](images/credits.jpeg?raw=true "Credits")
 
 ## Hardware
+### Body
+Body is held together by both the male/female headers coupling the OLED display PCB with the feather rp2040 PCB, as well as M2 spacers and screws
+
+![Front](images/body-face.jpeg?raw=true "Front")
+
+![Back](images/body-rear.jpeg?raw=true "Back")
+
+![Side](images/side.jpeg?raw=true "Side")
+
+![Side2](images/side2.jpeg?raw=true "Side2")
+
+Note that to have a proper fit with only 2 screws on the SCD40 sensor, I added two small M2.5 spacers to it can ride under the feather rp2040 solders tightly
+
 ### Sensor
 Sensirion SCD40/41 will both work
 For ease of assembly, I suggest using the adafruit PCBs that provide I2C STEMMA QT connectors
