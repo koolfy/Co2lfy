@@ -93,7 +93,7 @@ As this device might be used by people is risk assesment for situations where ac
 From the main screen, pressing "C" displays a simple "credits" (or "about") section showing somewhat useful infos
 We don't know how the device will end up on someone's hands so providing references to find further documentation or who to complain about is always useful :)
 
-TODO-IMAGE
+![Credits](images/credits.jpeg?raw=true "Credits")
 
 ## Hardware
 ### Sensor
