@@ -105,6 +105,9 @@ Body is held together by both the male/female headers coupling the OLED display 
 
 ![Side](images/body_side.jpeg?raw=true "Side")
 
+Battery is very neatly enclosed and protected by the headers 
+It can still be unplugged via the JST cable
+
 ![Side2](images/body_side2.jpeg?raw=true "Side2")
 
 Note that to have a proper fit with only 2 screws on the SCD40 sensor, I added two small M2.5 spacers to it can ride under the feather rp2040 solders tightly
