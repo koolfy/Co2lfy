@@ -37,7 +37,7 @@ Below 800ppm: Wear Mask (air should be safe as long as a FILTERING mask is being
 
 Below 1000ppm: High Risk (air is probably unsafe even with a mask on, instruct user to initiate ventilation NOW before things get even worse. This should indicate improper/insufficient air renewal)
 
-![High Risk display](images/righ-risk.jpeg?raw=true "High Risk")
+![High Risk display](images/high-risk.jpeg?raw=true "High Risk")
 
 Over 1000ppm: COVID KILLBOX (air cannot possibly be made safe, instruct user to OPEN *AND* LEAVE for at least 5 minutes.)
 
